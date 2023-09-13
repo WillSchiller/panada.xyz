@@ -30,7 +30,7 @@ export default function NavBar() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue('#0d1117')}
+        bg={'#0d1117'}
       
         minH={'60px'}
         py={{ base: 2 }}
@@ -55,7 +55,7 @@ export default function NavBar() {
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue( 'white')}
+            color={'white'}
             fontSize={"4xl"}>
             🥣
           </Text>
@@ -104,7 +104,7 @@ export default function NavBar() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('white');
+  const linkColor = 'white';
   const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
@@ -255,7 +255,5 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  {
-    
-  },
+
 ];
