@@ -31,11 +31,11 @@ export default function NavBar() {
     <Box>
       <Flex
         bg={'#0d1117'}
-      
+
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
-  
+
 
         align={'center'}>
         <Flex

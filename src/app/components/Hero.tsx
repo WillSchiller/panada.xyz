@@ -2,17 +2,16 @@
 
 import Head from 'next/head'
 import {
-    Link,
+  Link,
   Box,
   Heading,
   Container,
   Text,
   Button,
   Stack,
-  Icon,
-  useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import { PhoneIcon, AddIcon, ArrowRightIcon } from '@chakra-ui/icons'
 
 export default function Hero() {
   return (
@@ -23,20 +22,20 @@ export default function Hero() {
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}>
-         
-            <Heading
+
+          <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-        
+
             <Text as={'span'} color={'purple.500'}>
-               Panada
+              Panada
             </Text>
             : simplified wallets with good UX
           </Heading>
           <Text color={'gray.200'}>
-           100% open source, non-custodial, and built on Ethereum using <Link href="https://safe.global/" color={'green.300'} isExternal>Safe</Link>.
-           Built for security, simplicity, and ease of use.
+            100% open source, non-custodial, and built on Ethereum using <Link href="https://safe.global/" color={'green.300'} isExternal>Safe</Link>.
+            Built for security, simplicity, and ease of use.
           </Text>
           <Stack
             direction={'column'}
@@ -45,19 +44,23 @@ export default function Hero() {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              colorScheme={'green'}
-              bg={'green.400'}
+              color={"purple.500"}
+              border='1px'
+              borderStyle={'solid'}
+              borderColor={"purple.500"}
+
               rounded={'full'}
               px={6}
               _hover={{
                 bg: 'purple.500',
+                color: 'white',
               }}>
-              Get Started
+              Get started
             </Button>
-           
+
             <Box>
-            
-          
+
+
             </Box>
           </Stack>
         </Stack>
