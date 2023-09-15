@@ -28,13 +28,13 @@ export default function Hero() {
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
 
-            <Text as={'span'} color={'purple.400'}>
+            <Text as={'span'} color={'purple.400'} >
               Panada
             </Text>
-            : simplified wallets with good UX
+            : simplified <br /> wallets with good UX
           </Heading>
-          <Text color={'gray.200'}>
-            100% open source, non-custodial, and built on Ethereum using <Link href="https://safe.global/"  isExternal>Safe</Link>.
+          <Text color={'gray.200'} >
+            100% open source, non-custodial, and built on Ethereum using<br /> <Link href="https://safe.global/"  isExternal>Safe</Link>. 
             Built for security, simplicity, and ease of use.
           </Text>
           <Stack

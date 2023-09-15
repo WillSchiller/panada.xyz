@@ -1,8 +1,10 @@
-// app/providers.tsx
 'use client'
 
+import '@fontsource-variable/jetbrains-mono';
+import '@fontsource/roboto';
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
+import theme from './theme'
 
 export function Providers({ 
     children 
@@ -11,7 +13,7 @@ export function Providers({
   }) {
   return (
     <CacheProvider>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         {children}
       </ChakraProvider>
     </CacheProvider>
